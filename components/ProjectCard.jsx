@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Card, CardHeader } from "./ui/card";
 import { Github, Link2Icon, Download } from "lucide-react";
 import { Badge } from "./ui/badge";
-import { urlForImage } from "@/sanity/lib/image";
+import { urlForImage, urlForProjectImage } from "@/sanity/lib/image";
 
 export const ProjectCard = ({ project }) => {
   return (
@@ -13,8 +13,8 @@ export const ProjectCard = ({ project }) => {
         <div className="relative w-full h-[270px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light dark:xl:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
             className=" absolute bottom-0 shadow-2xl"
-            src={urlForImage(project.imgUrl)}
-            width={247}
+            src={urlForProjectImage(project.imgUrl)}
+            width={250}
             height={250}
             alt=""
             priority

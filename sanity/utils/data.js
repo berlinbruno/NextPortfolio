@@ -4,7 +4,6 @@ import { groq } from "next-sanity";
 export const detailsquery = () => {
   return client.fetch(
     groq`*[_type == "details"]{
-        _id,
         name,
         title,
         description,
@@ -26,7 +25,6 @@ export const detailsquery = () => {
 export const servicesquery = () => {
   return client.fetch(
     groq`*[_type == "services"]{
-        _id,
         icon,
         title,
         description,
@@ -37,7 +35,6 @@ export const servicesquery = () => {
 export const projectsquery = () => {
   return client.fetch(
     groq`*[_type == "projects"]  | order(_createdAt desc){
-        _id,
         title,
         description,
         projectLink,
@@ -53,7 +50,6 @@ export const projectsquery = () => {
 export const testimonialsquery = () => {
   return client.fetch(
     groq`*[_type == "testimonials"]{
-        _id,
         name,
         company,
         feedback,
@@ -65,7 +61,6 @@ export const testimonialsquery = () => {
 export const socialsquery = () => {
   return client.fetch(
     groq`*[_type == "socials"]{
-        _id,
         icon,
         path,
     }`

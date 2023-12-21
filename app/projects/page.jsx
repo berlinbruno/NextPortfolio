@@ -1,4 +1,5 @@
 "use client";
+import { Loading } from "@/components/Loading";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { client } from "@/sanity/lib/client";
@@ -10,7 +11,7 @@ export default function Projects() {
   const [data, setData] = useState(null);
   const [categories, setCategories] = useState("");
   const [category, setCategory] = useState("all project");
-  const [Loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     client
@@ -42,10 +43,7 @@ export default function Projects() {
       });
   }, []);
 
-  if (Loading) return <div className=" h-[100vh] w-full flex justify-center items-center">
-    <SyncLoader color="#6b26d9"
-    size={30} />
-  </div>
+  if (loading) return <Loading/>
   if (!data) return <p>No Projects</p>
 
   const filteredProjects = data.filter((project) => {
