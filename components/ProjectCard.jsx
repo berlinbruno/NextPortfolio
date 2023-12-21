@@ -7,7 +7,7 @@ import { urlForImage } from "@/sanity/lib/image";
 
 export const ProjectCard = ({ project }) => {
   return (
-    <Card className="group overflow-hidden relative min-h-[400px]">
+    <Card className="group overflow-hidden relative min-h-[410px]">
       <CardHeader className="p-0">
         {/* image */}
         <div className="relative w-full h-[270px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light dark:xl:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
