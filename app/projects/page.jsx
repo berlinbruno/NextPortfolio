@@ -1,5 +1,5 @@
 "use client";
-import { Loading } from "@/components/Loading";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { client } from "@/sanity/lib/client";
@@ -42,7 +42,7 @@ export default function Projects() {
       });
   }, []);
 
-  if (loading) return <Loading/>
+  if (loading) return <LoadingScreen/>
   if (!data) return <p>No Projects</p>
 
   const filteredProjects = data.filter((project) => {

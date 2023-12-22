@@ -21,7 +21,7 @@ export default async function Home() {
 
   return (
     <main>
-      {/* hero */}
+        {/* hero */}
       <Hero
         details={details}
         projects={projects}

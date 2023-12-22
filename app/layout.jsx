@@ -16,11 +16,11 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   const socials = await socialsquery();
   return (
-    <html lang="en" suppressHydrationWarning > 
+    <html lang="en" suppressHydrationWarning>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header social={socials} />
-          {children}
+             {children}
           <Footer />
         </ThemeProvider>
       </body>
