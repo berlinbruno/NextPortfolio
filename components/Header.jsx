@@ -7,7 +7,7 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 
-const Header = ({social}) => {
+const Header = ({ social }) => {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
 
@@ -16,7 +16,7 @@ const Header = ({social}) => {
       window.scrollY > 50 ? setHeader(true) : setHeader(false);
     });
 
-    return () => window.removeEventListener('scroll', scrollYPos)
+    return () => window.removeEventListener("scroll", scrollYPos);
   });
   return (
     <header

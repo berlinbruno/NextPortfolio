@@ -7,8 +7,8 @@ const Socials = ({ containerStyle, iconsStyles, social }) => {
     <div className={`${containerStyle}`}>
       {social.map((social, index) => {
         return (
-          <Link href={social.path} target="_blank" key={index} >
-            <div className={`${iconsStyles}`} >
+          <Link href={social.path} target="_blank" key={index}>
+            <div className={`${iconsStyles}`}>
               <DynamicIcon iconName={social.icon} />
             </div>
           </Link>

@@ -34,7 +34,7 @@ export const Slider = ({ slides, sliderStyles, slidesPerView, cardType }) => {
       )}
       {cardType === "project" && (
         <div>
-          {slides.slice(0,4).map((slide, index) => {
+          {slides.slice(0, 4).map((slide, index) => {
             return (
               <SwiperSlide key={index}>
                 <ProjectCard project={slide} />

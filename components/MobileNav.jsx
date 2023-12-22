@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import Socials from "./Socials";
 
-const MobileNav = ({social}) => {
+const MobileNav = ({ social }) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -19,7 +19,11 @@ const MobileNav = ({social}) => {
               linkStyles="text-2xl"
             />
           </div>
-          <Socials containerStyle="flex gap-x-4" iconsStyles="text-2xl" social={social}/>
+          <Socials
+            containerStyle="flex gap-x-4"
+            iconsStyles="text-2xl"
+            social={social}
+          />
         </div>
       </SheetContent>
     </Sheet>

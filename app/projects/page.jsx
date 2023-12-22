@@ -5,7 +5,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import React, { useEffect, useState } from "react";
-import { SyncLoader } from "react-spinners";
 
 export default function Projects() {
   const [data, setData] = useState(null);

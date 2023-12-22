@@ -1,11 +1,9 @@
 import DevImg from "./DevImg";
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   User2,
   MailIcon,
   HomeIcon,
-  PhoneCall,
   GraduationCap,
   Calendar,
   Briefcase,
@@ -13,7 +11,6 @@ import {
   CpuIcon,
   Database,
   Code2,
-  CheckCircle,
   CheckCircle2,
 } from "lucide-react";
 import { urlForImage } from "@/sanity/lib/image";
