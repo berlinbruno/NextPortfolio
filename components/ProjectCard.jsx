@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Card, CardHeader } from "./ui/card";
 import { Github, Link2Icon, Download } from "lucide-react";
 import { Badge } from "./ui/badge";
-import { urlForImage, urlForProjectImage } from "@/sanity/lib/image";
+import { urlForProjectImage } from "@/sanity/lib/image";
 
 export const ProjectCard = ({ project }) => {
   return (
-    <Card className="group overflow-hidden relative min-h-[410px]">
+    <Card className="group overflow-hidden relative min-h-[450px]">
       <CardHeader className="p-0">
         {/* image */}
         <div className="relative w-full h-[270px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light dark:xl:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
