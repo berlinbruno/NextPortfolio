@@ -5,10 +5,10 @@ import dynamic from "next/dynamic";
 const DynamicIcon = ({ iconName }) => {
     let IconComponent = null;
 
-    // if (iconName.startsWith("Ri")) {
-    //   const RiReactIcons = dynamic(() => import("react-icons/ri").then((mod) => mod[iconName]))
-    //   IconComponent = RiReactIcons;
-    // }
+    if (iconName.startsWith("Ri")) {
+      const RiReactIcons = dynamic(() => import("react-icons/ri").then((mod) => mod[iconName]))
+      IconComponent = RiReactIcons;
+    }
 
     if (IconComponent) {
       return <div>{<IconComponent />}</div>;

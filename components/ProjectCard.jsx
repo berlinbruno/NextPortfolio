@@ -17,12 +17,11 @@ export const ProjectCard = ({ project }) => {
             width={250}
             height={250}
             alt=""
-            priority
+            loading="lazy"
           />
           {/* buttons */}
           <div className=" flex gap-x-4">
             {project.file !== null && (
-
               <Link
                 href={project.file.asset.url}
                 className=" bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300"
