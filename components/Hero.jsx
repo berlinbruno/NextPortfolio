@@ -22,7 +22,8 @@ const Hero = ({ details, projects, testimonials, socials }) => {
             <div className=" text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               {details[0].title}
             </div>
-            <h1 className="h1 mb-4">Hello, myself {details[0].name}</h1>
+            <h1 className="h1 mb-4">Hi, Myself </h1>
+            <h1 className="h1 mb-4"> {details[0].name}</h1>
             <p className=" subtitle max-w-[490px] mx-auto xl:mx-0">
               {details[0].description}
             </p>

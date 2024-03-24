@@ -23,7 +23,7 @@ const Header = ({ social }) => {
       className={`${
         header
           ? "py-4 bg-white shadow-lg dark:bg-accent"
-          : "py-6 dark:bg-transparent"
+          : "py-4 dark:bg-transparent"
       } sticky top-0 z-30 transition-all ${
         pathname === "/" && "bg-[#F5F5FF]"
       } `}
